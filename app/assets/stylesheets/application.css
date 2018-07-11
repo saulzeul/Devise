@@ -13,3 +13,57 @@
  *= require_tree .
  *= require_self
  */
+ body {
+   margin: 0;
+ }
+ .links, .links:hover {
+   text-decoration: none;
+   color: #ffffff;
+ }
+ .logo {
+   background: #b0b0b0;
+   width: 150px;
+   height: 30px;
+   border-radius: 40px;
+ }
+
+ .imgEmpresa {
+   width: 100px;
+   height: 100px;
+   background: #b0b0b0;
+   border-radius: 60px;
+ }
+
+ /* Estilos generales de bootstrap modificados */
+ .card  {
+   width: 18rem !important;
+   background: #f8f9fa !important;
+   border-radius: 30px !important;
+   border: none !important;
+ }
+
+ .btn {
+   border-radius: 30px !important;
+ }
+
+ .menuBtn {
+    margin: 7px !important;
+ }
+
+ .form-control {
+   background: #E0E0E0 !important;
+   border-radius: 30px !important;
+   border-style: none !important;
+ }
+
+ .form-control:focus {
+     color: #495057;
+     background-color: #fff;
+     border-color: #80bdff;
+     outline: 0;
+     box-shadow: 0 0 0 0.1rem rgba(74, 74, 74, 0.52);
+ }
+
+ .turbolinks-progress-bar {
+   background: #28a745 !important;
+ }

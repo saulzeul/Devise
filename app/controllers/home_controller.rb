@@ -1,10 +1,11 @@
 class HomeController < ApplicationController
   def index
-    @names =
-      {
-        :name => "Saul",
-        :lastname => "Espinoza"
-      }
+    @userDates =
+    {
+      :name => current_user.name ,
+      :email => current_user.email ,
+      :lastSign => current_user.last_sign_in_at
+    }
   end
 
   def json

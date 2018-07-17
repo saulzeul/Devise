@@ -5,3 +5,6 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+Kindle.create!( inventory_id: "123", status: "borrowed")
+Kindle.create!( inventory_id: "231", status: "borrowed")
+Kindle.create!( inventory_id: "312", status: "free")

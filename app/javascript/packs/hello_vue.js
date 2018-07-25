@@ -10,8 +10,13 @@ import Vue from 'vue/dist/vue.esm'
 import App from '../app.vue'
 import axios from 'axios'
 import VueAxios from 'vue-axios'
+<<<<<<< HEAD
 Vue.use(VueAxios, axios)
 Vue.use(TurbolinksAdapter);
+=======
+Vue.use(TurbolinksAdapter);
+Vue.use(VueAxios, axios);
+>>>>>>> parent of 4554aa7... Vue resource works!
 document.addEventListener('turbolinks:load', () => {
   const app = new Vue({
     el: '#hello',

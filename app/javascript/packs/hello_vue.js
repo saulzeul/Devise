@@ -8,9 +8,10 @@
 import TurbolinksAdapter from 'vue-turbolinks'
 import Vue from 'vue/dist/vue.esm'
 import App from '../app.vue'
-import VueResource from 'vue-resource'
+import axios from 'axios'
+import VueAxios from 'vue-axios'
+Vue.use(VueAxios, axios)
 Vue.use(TurbolinksAdapter);
-Vue.use(VueResource);
 document.addEventListener('turbolinks:load', () => {
   const app = new Vue({
     el: '#hello',

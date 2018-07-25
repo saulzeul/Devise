@@ -1,31 +1,22 @@
 <template>
   <div id="app">
-    <p>{{ message }}</p>
     <ul v-for="(product, productIndex) in products" :key="productIndex">
       <li>{{ product.status }}</li>
+      <li>{{ product.inventory_id }}</li>
     </ul>
-    <pre> {{ $data }}</pre>
   </div>
 </template>
 
 <script>
-
+import axios from 'axios';
 export default {
   data: function () {
     return {
-      message: "Consumiendo API Vue ",
       products: [ ]
     }
   },
-  created: function () {
-    this.mostrarAPI()
-  },
-  methods: {
-    mostrarAPI: function () {
-      this.$http.get('http://localhost:4000/api/kindles.json').then(function (mostrarContactos) {
-        this.products = mostrarContactos.body.models
-      })
-    }
+  mounted () {
+    axios.get('http://localhost:4000/api/kindles.json').then(response => (this.products = response.data.models))
   }
 }
 </script>

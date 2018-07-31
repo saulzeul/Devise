@@ -7,9 +7,7 @@ Rails.application.routes.draw do
       root 'home#index', as: :authenticated_root
       #API's
       get 'json', to: 'home#json'
-      namespace :api do
-        resources :kindles, format: :json
-      end
+      resources :cars
       resources :articles
     end
 
@@ -18,5 +16,7 @@ Rails.application.routes.draw do
       get "index", to: 'devise/sessions#new'
       get "panel", to: 'devise/sessions#new'
     end
+    resources :cars
+    resources :tires
   end
 end

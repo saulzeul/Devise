@@ -32,6 +32,10 @@ gem 'webpacker'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 gem 'devise'
+#Gem para habilitar cors que funcionara con el API Rest full
+gem 'rack-cors'
+# gem para serializar los datos JSON
+gem 'active_model_serializers'
 # Use Capistrano for deployment
 gem 'activerecord-postgresql-adapter', '~> 0.0.1'
 # gem 'capistrano-rails', group: :development

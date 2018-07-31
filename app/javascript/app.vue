@@ -1,48 +1,27 @@
-<template>
-  <div id="app">
-<<<<<<< HEAD
-    <ul v-for="(product, productIndex) in products" :key="productIndex">
-      <li>{{ product.status }}</li>
-      <li>{{ product.inventory_id }}</li>
-    </ul>
-=======
-    <p>{{ message }}</p>
-    <pre> {{ $data }}</pre>
->>>>>>> parent of 4554aa7... Vue resource works!
+<template lang="html">
+  <div class="">
+    <p>{{ name }}</p>
   </div>
 </template>
 
 <script>
-<<<<<<< HEAD
 import axios from 'axios';
 export default {
   data: function () {
     return {
-      products: [ ]
+      name: "Saul Emmanuel Espinoza Lopez"
     }
-  },
-  mounted () {
-    axios.get('http://localhost:4000/api/kindles.json').then(response => (this.products = response.data.models))
-=======
-export default {
-  data: function () {
-    return {
-      message: "Consumiendo API Vue ",
-      products: []
-    }
-  },
-    mounted() {
-    axios.get("http://localhost:4000/api/kindles.json").then(response => {
-      this.products = response.data
-    })
->>>>>>> parent of 4554aa7... Vue resource works!
   }
 }
 </script>
 
-<style scoped>
-p, h2 {
-  font-size: 2em;
+<style lang="css">
+p {
+  background-color: rgb(0, 129, 170);
+  border-color: rgb(0, 48, 79);
+  color: white;
+  align-items: center;
   text-align: center;
+  border-radius: 20px;
 }
 </style>
